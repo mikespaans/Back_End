@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome</title>
+    <style>
+        .input {
+            display: flex;
+            flex-direction: row;
+            max-width: 70rem;
+            margin: 0px auto;
+            width: 100px;
+        }
+
+
+        #name {
+            margin-top: 15px;
+            height: 15px;
+        }
+
+        #email {
+            margin-top: 15px;
+            height: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="/welcome">
+        <div id="Body">
+            <div class="input">
+                <p>Naam: </p>
+                <input type="text" id="name" name="username">
+            </div>
+            <div class="input">
+                <p>Email: </p>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="input">
+                <input type="submit" value="Submit">
+            </div>
+    </form>
+
+    <!-- <script type="module" src="welcome.py"></script> -->
+</body>
+
+</html>
