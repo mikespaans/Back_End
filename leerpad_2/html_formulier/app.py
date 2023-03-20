@@ -18,9 +18,8 @@ def index():
     return render_template(template_name_or_list='welcome.html')
 
     # return render_template(template_name_or_list='welcome.html')
-@app.route("/welcome")
+@app.route("/welcome", methods=["POST"])
 def welcome():
-    name = request.args.get("username", "")
-    email = request.args.get("email", "")
-    print (request.args)
+    name = request.form.get("username", "")
+    email = request.form.get("email", "")
     return f'<h1>De ingevulde gegevens zijn</h1> <p> Naam : {name} <br> email : {email}</p>'
