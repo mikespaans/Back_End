@@ -25,6 +25,10 @@
             margin-top: 15px;
             height: 15px;
         }
+
+        .required {
+            color: red;
+        }
     </style>
 </head>
 
@@ -33,15 +37,18 @@
         <div id="Body">
             <div class="input">
                 <p>Naam: </p>
-                <input type="text" id="name" name="username">
+                <input type="text" id="name" name="username" required>
+                <p class="required">*</p>
             </div>
             <div class="input">
                 <p>Email: </p>
-                <input type="email" id="email" name="email">
+                <input type="email" id="email" name="email" required>
+                <p class="required">*</p>
             </div>
             <div class="input">
                 <input type="submit" value="Submit">
             </div>
+
     </form>
 
     <!-- <script type="module" src="welcome.py"></script> -->
