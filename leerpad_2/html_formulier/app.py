@@ -6,13 +6,13 @@ app = Flask(__name__)
 # url_for('static', filename='style.css')
 
 
-@app.route('/')
+@app.route('/', methods=['GET'])
 def index():
     # username = request.args.get('username')
     return render_template(template_name_or_list='welcome.html')
 
     # return render_template(template_name_or_list='welcome.html')
-@app.route("/welcome", methods=["POST"])
+@app.route("/", methods=["POST"])
 def welcome():
     name = request.form.get("username", "")
     email = request.form.get("email", "")
