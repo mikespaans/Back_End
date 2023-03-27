@@ -1,0 +1,3 @@
+Name = "Mike Spaans"
+Picture = "silly_cat.png"
+Llorem_ipsum = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mattis augue eu sem ullamcorper, eget rutrum arcu tincidunt. Nulla eu faucibus urna. Quisque eget ipsum sit amet sem venenatis ornare non sed urna. Etiam maximus vulputate egestas. Nunc nibh nulla, dictum a enim vitae, volutpat dignissim tellus. Fusce eu turpis quam. Duis faucibus metus eget hendrerit hendrerit. Aliquam et lectus ut velit suscipit molestie at ut tellus. Suspendisse tincidunt euismod blandit. Maecenas ornare leo quis elementum accumsan."
