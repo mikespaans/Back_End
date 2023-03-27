@@ -1,1 +1,1 @@
-Name = "Mike Spaans"
+List = ["banaan", "appel", "druif"]
