@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            max-width: 70rem;
+            margin: 0px auto;
+            width: 500px;
+        }
+
+        .Mad_Libs {
+            color: black;
+            text-align: center;
+            font-size: 50px;
+        }
+
+        .menubalk {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="/resultaat_paniek" method="POST">
+        <div class="body">
+            <h1 class="Mad_Libs">Mad Libs</h1>
+
+
+            <div class="menubalk">
+                <a href="/">Er heerst paniek ...</a>
+                <a href="/onkunde">Onkunde</a>
+            </div>
+
+            <!-- <h1>Er heerst paniek</h1> -->
+
+            <table>
+                <tr>
+                    <th>
+                        <h1>Er heerst paniek</h1>
+                    </th>
+                </tr>
+
+                <tr>
+                    <td>
+
+                        <p>Welk dier zou je nooit als huisdier willen hebben?</p>
+                    </td>
+                    <td>
+                        <input class="InputField" type="text" name="huisdier" required>
+
+                    </td>
+                </tr>
+
+
+
+                <tr>
+                    <td>
+                        <p>Wie is de belangrijkste persoon in je leven?</p>
+                    </td>
+                    <td>
+                        <input class="InputField" type="text" name="persoon" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <p>In welk land zou je graag willen wonen?</p>
+                    </td>
+                    <td>
+                        <input class="InputField" type="text" name="land" required>
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td>
+                        <p>Wat doe je als je je verveelt?</p>
+                    </td>
+                    <td>
+                        <input class="InputField" type="text" name="vervelen" required>
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td>
+                        <p>Met welk speelgoed speelde je als kind het meest?</p>
+                    </td>
+                    <td>
+                        <input class="InputField" type="text" name="speelgoed" required>
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td>
+                        <p>Bij welke docent spijbel je het liefst?</p>
+                    </td>
+                    <td>
+                        <input class="InputField" type="text" name="docent" required>
+                    </td>
+
+
+                </tr>
+
+                <tr>
+                    <td>
+                        <p>Als je €100.000,- had, wat zou je dan kopen?</p>
+                    </td>
+                    <td>
+                        <input class="InputField" type="text" name="geld" required>
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td>
+                        <p>Wat is je favoriete bezigheid?</p>
+                    </td>
+                    <td>
+                        <input class="InputField" type="text" name="bezigheid" required>
+                    </td>
+
+                </tr>
+
+            </table>
+
+            <input type="submit" value="verzenden">
+
+            <footer>
+                Mike Spaans © 2023
+            </footer>
+
+        </div>
+    </form>
+
+</body>
+
+</html>
