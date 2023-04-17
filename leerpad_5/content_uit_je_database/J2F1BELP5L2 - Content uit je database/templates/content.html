@@ -1,0 +1,9 @@
+{% extends "header.html" %}
+
+{% block content %}
+<h1>{{ Game_Titel }}</h1>
+<div class="PictureDiv">
+    <img src="{{url_for('static', filename=image)}}" alt="">
+</div>
+<p>{{ Game_Description }}</p>
+{% endblock %}
