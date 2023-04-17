@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Character - Bowser</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- <link href="resources/css/style.css" rel="stylesheet" /> -->
+    <style>
+        html,
+        body {
+            background-color: gray;
+            font-family: Verdana;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: limegreen;
+        }
+
+        a:active {
+            color: red;
+        }
+
+        #container,
+        footer,
+        header {
+            width: 960px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 10px 20px;
+        }
+
+        header {
+            position: relative;
+            text-align: center;
+            margin-bottom: 10px;
+            padding: 20px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .item {
+            border-bottom: 1px solid silver;
+            padding: 5px;
+            margin: 10px;
+            display: inline-flex;
+            width: 450px;
+        }
+
+        .item:hover {
+            background-color: gainsboro;
+        }
+
+        .item .left {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .item .left .avatar {
+            border: 1px solid black;
+            border-radius: 50%;
+            height: 150px;
+        }
+
+        .item .right {
+            display: inline-block;
+        }
+
+        .item .right h2 {
+            padding: 0;
+            margin: 0;
+        }
+
+        .item:hover .right ul {
+            color: black;
+        }
+
+        .detail {
+            position: relative;
+        }
+
+        header .backbutton {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+        }
+
+        .detail .left,
+        .detail .right {
+            display: inline-block;
+        }
+
+        .detail .left {
+            width: 300px;
+            margin-right: 20px;
+            float: left;
+        }
+
+        .detail .right {
+            width: 630px;
+        }
+
+        .detail .stats {
+            border: 2px solid black;
+        }
+
+        .detail .stats .gear {
+            list-style: none;
+            padding: 0;
+            padding-left: 20px;
+        }
+
+        footer {
+            margin-top: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>{{character.name}}</h1>
+        <a class="backbutton" href="/"><i class="fas fa-long-arrow-alt-left"></i> Terug</a>
+    </header>
+    <div id="container">
+        <div class="detail">
+            <div class="left">
+                <img class="avatar" src="{{url_for('static', filename=character.avatar)}}" alt="">
+                <div class="stats" style="background-color: {{character.color}}">
+                    <ul class="fa-ul">
+                        <li><span class="fa-li"><i class="fas fa-heart"></i></span> {{character.health}}</li>
+                        <li><span class="fa-li"><i class="fas fa-fist-raised"></i></span> {{character.attack}}</li>
+                        <li><span class="fa-li"><i class="fas fa-shield-alt"></i></span> {{character.defense}}</li>
+                    </ul>
+                    <ul class="gear">
+                        <li><b>Weapon</b>: {{character.weapon}}</li>
+                        <li><b>Armor</b>: {{character.armor}}</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right">
+                <p>
+                    {{character.bio}}
+                </p>
+            </div>
+            <div style="clear: both"></div>
+        </div>
+    </div>
+    <footer>&copy; [Mike Spaans] 2023</footer>
+</body>
+
+</html>
